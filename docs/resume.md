@@ -1,13 +1,20 @@
-# Resume
+<div class="resume-header">
+  <div class="resume-left">
+    <h2>Pranav Sharma</h2>
 
-## Pranav Sharma
+    <p><strong>Senior AI Engineer — Production ML Systems</strong><br>
+      Heilbronn, Germany • Frankfurter Str. 46, 74072 Heilbronn<br>
+      Phone: +49-15163776610 • Email: <a href="mailto:pranavsharma619@gmail.com">pranavsharma619@gmail.com</a><br>
+      LinkedIn: <a href="https://linkedin.com/in/topranav">linkedin.com/in/topranav</a>
+    </p>
+  </div>
 
-**Senior AI Engineer — Production ML Systems**  
-Heilbronn, Germany • Frankfurter Str. 46, 74072 Heilbronn  
-Phone: +49-15163776610 • Email: <pranavsharma619@gmail.com>  
-LinkedIn: linkedin.com/in/topranav
+  <div class="resume-right">
+    <img src="/assets/Portrait.jpg" alt="Pranav Sharma portrait" class="resume-portrait" />
+  </div>
+</div>
 
----
+<hr>
 
 ## Profile
 
