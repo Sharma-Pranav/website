@@ -1,139 +1,82 @@
 # Decision Kernel Lite — Choosing Under Uncertainty
 
-## Live demo (embedded)
+Most decisions don’t fail because of bad math.  
+They fail because uncertainty is handled informally.
 
-<iframe
-  src="https://pranavsharma-decision-kernel-lite.hf.space"
-  style="width: 100%; height: 900px; border: 0; border-radius: 12px;"
-  loading="lazy"
-  allow="clipboard-read; clipboard-write"
-></iframe>
-
-- Open in new tab: <https://pranavsharma-decision-kernel-lite.hf.space>
-- Hugging Face page: <https://huggingface.co/spaces/PranavSharma/decision-kernel-lite>
-- GitHub repo: <https://github.com/Sharma-Pranav/decision-kernel-lite>
+Decision Kernel Lite makes that uncertainty explicit, compares options with clear risk lenses, and gives you a defensible recommendation you can actually explain.
 
 ---
 
-## What you can do in the demo (30 seconds)
+## Try the live demo
 
-1. Define **Scenarios + Probabilities** (they’ll be normalized if they don’t sum to 1).
-2. Define **Actions + Losses** (loss matrix = action × scenario).
-3. Choose a decision lens:
-   - **Expected Loss**
-   - **Minimax Regret**
-   - **CVaR** (tail-risk)
-4. Copy the generated **Decision Card** (exec-ready rationale).
+-   [Open in new tab](https://pranavsharma-decision-kernel-lite.hf.space)
+-   [Hugging Face Space](https://huggingface.co/spaces/PranavSharma/decision-kernel-lite)
+-   [GitHub repository](https://github.com/Sharma-Pranav/decision-kernel-lite)
 
 ---
 
-## What this proves
+## What you can do in ~30 seconds
 
-- Decisions fail because uncertainty is handled informally: probabilities are debated, downside is underestimated, and justification is retrospective.
-- You don’t need certainty to decide. You need **explicit assumptions**, **bounded downside**, and **defensible trade-offs**.
-- Different lenses are not “better/worse” — they represent different risk postures.
+1.  Add **scenarios** and their **probabilities**  
+    (if they don’t sum to 1, the app normalizes them)
+2.  Add **actions** and **losses**  
+    (loss matrix = action × scenario)
+3.  Compare decisions through three lenses:
+    -   **Expected Loss**
+    -   **Minimax Regret**
+    -   **CVaR** (tail risk)
+4.  Copy the generated **Decision Card** for docs, memos, or slides
 
 ---
 
-## Core concept
+## Why this matters
 
-A decision is defined by four primitives:
+In real teams:
+
+-   probabilities are debated,
+-   downside is often underestimated,
+-   and rationales are written after the decision.
+
+This tool flips that.  
+It forces explicit assumptions **before** the decision and gives a traceable reason for the final choice.
+
+---
+
+## Core model
+
+Every decision is represented as:
 
 **Actions × Scenarios × Probabilities × Losses**
 
-The kernel evaluates each action under three lenses and outputs **one recommended action** + **justifications**.
+The kernel evaluates each action with multiple risk lenses and returns:
+
+-   one recommended action,
+-   side-by-side evidence,
+-   and a plain-language rationale.
 
 ---
 
-## Decision lenses (when to use what)
+## The three decision lenses
 
-### 1) Expected Loss (risk-neutral)
+### 1) Expected Loss
 
-Use when:
+Use this when decisions are frequent and probabilities are reasonably trusted.  
+It minimizes average long-run loss.
 
-- decisions repeat frequently
-- probabilities are reasonably trusted
-- variance is acceptable
+### 2) Minimax Regret
 
-Optimizes:
+Use this when probabilities are contested or accountability is high.  
+It minimizes worst-case hindsight regret.
 
-- **long-run average pain**
+### 3) CVaR (tail risk)
 
-### 2) Minimax Regret (robust / political safety)
-
-Use when:
-
-- probabilities are unreliable or contested
-- it’s one-shot or high-accountability
-- post-hoc defensibility matters
-
-Optimizes:
-
-- **“what will I regret least in hindsight?”**
-
-### 3) CVaR (tail-risk protection)
-
-Use when:
-
-- rare bad outcomes are unacceptable (ruin / safety / bankruptcy)
-- downside is asymmetric and must be bounded
-- survival > average performance
-
-Optimizes:
-
-- **average loss in the worst cases** (tail), not the overall average
+Use this when rare bad outcomes are unacceptable.  
+It minimizes average loss in the worst tail of outcomes.
 
 ---
 
-## Decision logic (high level)
+## How the app decides (high level)
 
 ```mermaid
-flowchart TD
-  A[Inputs: Actions, Scenarios, Probabilities, Losses] --> B[Compute Expected Loss per action]
-  A --> C[Compute Regret matrix per action × scenario]
-  A --> D[Compute CVaR per action at alpha]
-  B --> E{Primary rule}
-  C --> E
-  D --> E
-  E -->|Expected Loss| F[Choose argmin Expected Loss]
-  E -->|Minimax Regret| G[Choose argmin Max Regret]
-  E -->|CVaR| H[Choose argmin CVaR]
-  F --> I[Decision Card]
-  G --> I
-  H --> I
+flowchart TD  A[Inputs: Actions, Scenarios, Probabilities, Losses] --> B[Compute Expected Loss per action]  A --> C[Compute Regret matrix per action × scenario]  A --> D[Compute CVaR per action at alpha]  B --> E{Primary rule}  C --> E  D --> E  E -->|Expected Loss| F[Choose argmin Expected Loss]  E -->|Minimax Regret| G[Choose argmin Max Regret]  E -->|CVaR| H[Choose argmin CVaR]  F --> I[Decision Card]  G --> I  H --> I
 ```
-
----
-
-## Rule recommendation (simple heuristic)
-
-The app includes a transparent heuristic:
-
-- if **tail risk dominates average risk** → recommend **CVaR**
-- otherwise → recommend **Expected Loss**
-
-This is advisory only; you can override it. Governance is preserved.
-
----
-
-## Outputs you get
-
-- **One recommended action**
-- Evidence table with:
-
-  - Expected Loss
-  - Max Regret
-  - CVaR@alpha
-- Regret table (action × scenario)
-- A copy/paste **Decision Card** (for a memo or exec deck)
-
----
-
-## Downloads
-
-!!! info "Slides"
-
-- [Direct download (PPTX)](https://raw.githubusercontent.com/Sharma-Pranav/decision-kernel-lite/main/Decision_Kernel_Lite__Choosing_Under_Uncertainty.pptx)
-- [View on GitHub](https://github.com/Sharma-Pranav/decision-kernel-lite/blob/main/Decision_Kernel_Lite__Choosing_Under_Uncertainty.pptx)
-
----

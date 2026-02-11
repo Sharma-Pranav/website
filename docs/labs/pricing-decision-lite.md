@@ -1,6 +1,14 @@
 # Pricing Decision Lite — Robust Price Selection Under Uncertainty
 
-## Live demo (embedded)
+Most pricing tools give you one “optimal” price.  
+This demo asks a more practical question: **will that price still hold up when assumptions change?**
+
+Pricing Decision Lite compares upside and downside, then gives a clear outcome:
+**OPTIMIZE, HOLD, or NO-GO**.
+
+---
+
+## Try the live demo
 
 <iframe
   src="https://pranavsharma-pricing-decision-lite.hf.space"
@@ -9,29 +17,31 @@
   allow="clipboard-read; clipboard-write"
 ></iframe>
 
-- Open in new tab: <https://pranavsharma-pricing-decision-lite.hf.space>  
-- Hugging Face page: <https://huggingface.co/spaces/PranavSharma/pricing-decision-lite>  
-- GitHub repo: <https://github.com/Sharma-Pranav/pricing-decision-lite>  
+- [Open in new tab](https://pranavsharma-pricing-decision-lite.hf.space)  
+- [Hugging Face Space page](https://huggingface.co/spaces/PranavSharma/pricing-decision-lite)  
+- [GitHub repository](https://github.com/Sharma-Pranav/pricing-decision-lite)
 
 ---
 
-## What you can do in the demo (30 seconds)
+## What you can do in ~30 seconds
 
-1. Choose a **data mode** (Synthetic vs observational-mode workflow).
-2. Review the **profit distribution** across candidate prices.
-3. See the **naïve optimum** vs the **robust (governed) recommendation**.
-4. Inspect **downside risk** (e.g., low-quantile profit) and decision status:
-   - **OPTIMIZE** (deploy a robust price)
-   - **HOLD** (insufficient leverage / too fragile)
-   - **NO-GO** (no feasible price meets governance)
+1. Choose a **data mode** (synthetic or observational-style workflow)
+2. Review **profit distributions** across candidate prices
+3. Compare the **naïve optimum** vs the **robust governed recommendation**
+4. Inspect downside risk (for example, low-quantile profit) and final decision status:
+   - **OPTIMIZE** — deploy a robust price
+   - **HOLD** — signal is weak or fragile
+   - **NO-GO** — no price passes governance criteria
 
 ---
 
-## What this proves
+## Why this matters
 
-- The price that maximizes expected profit is often **fragile under uncertainty**.
-- **Downside-aware governance** changes decisions: it can shift the price or block deployment.
-- Pricing decisions are **regime-conditional** (clean synthetic assumptions ≠ noisy observational reality).
+- The expected-profit-maximizing price can be fragile.
+- Risk-aware governance often changes the final recommendation.
+- Pricing is regime-dependent: clean synthetic assumptions and noisy observational settings can lead to very different conclusions.
+
+This app is built for **decision quality under uncertainty**, not just point-estimate optimization.
 
 ---
 
@@ -45,15 +55,3 @@ flowchart TD
   D -->|Pass| E[OPTIMIZE<br/>choose robust price]
   D -->|Borderline| F[HOLD]
   D -->|Fail| G[NO-GO]
-````
-
----
-
-## Downloads
-
-!!! info "Slides"
-
-- [Direct download (PPTX)](https://raw.githubusercontent.com/Sharma-Pranav/pricing-decision-lite/main/Pricing_Decision_Lite%20%E2%80%94%20Robust_Price_Selection_Under_Uncertainty.pptx)
-- [View on GitHub](https://github.com/Sharma-Pranav/pricing-decision-lite/blob/main/Pricing_Decision_Lite%20%E2%80%94%20Robust_Price_Selection_Under_Uncertainty.pptx)
-
----
