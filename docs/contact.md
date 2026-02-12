@@ -4,7 +4,7 @@
 
 Heilbronn, Germany
 
-- Email: [pranavsharma619@gmail.com](mailto:pranavsharma619@gmail.com)  
+- Email: [pranavsharma619@gmail.com](mailto:pranav.systems@proton.me)  
 - LinkedIn: [linkedin.com/in/topranav](https://linkedin.com/in/topranav)
 
 ---
