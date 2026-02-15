@@ -61,7 +61,7 @@ nav:
   - Blog:
       - blog/index.md
       - Posts:
-          - "0001 — Regime-aware model selection (what actually worked)": blog/posts/2026-02-01-regime-aware-model-selection-what-actually-worked.md
+          - "2026-02-15-Why-the-Most-Frequent-SKU-Winner-Can-Be-the-Wrong-Portfolio-Model": blog/posts/2026-02-15-Why-the-Most-Frequent-SKU-Winner-Can-Be-the-Wrong-Portfolio-Model.md
   - Contact: contact.md
 
 extra_css:
