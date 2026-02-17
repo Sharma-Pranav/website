@@ -1,14 +1,22 @@
 ---
-draft: true
+title: "Why the Most Frequent SKU Winner Can Be the Wrong Portfolio Model"
+description: "SKU win frequency can mislead portfolio model selection. In a benchmark of 18 models on 297 SKUs, the top win-share model was ~21% worse than the portfolio leader on mean score."
 date: 2026-02-15
+draft: false
 categories:
-  - Notes
-  - Forecasting
+  - "Notes"
+  - "Forecasting"
 tags:
-  - sandbox
-  - regime
-  - metrics
+  - "sandbox"
+  - "regime"
+  - "metrics"
+social:
+  cards_layout_options:
+    title: "Most Frequent SKU Winner != Best Portfolio Model"
+    description: "18-model benchmark on 297 SKUs: optimize portfolio stability, not just local win frequency."
 ---
+
+
 
 # Why the Most Frequent SKU Winner Can Be the Wrong Portfolio Model
 

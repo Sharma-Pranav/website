@@ -18,16 +18,19 @@ theme:
     code: Red Hat Mono
 
   palette:
-    # ✅ Light mode — default (white)
     - scheme: default
       primary: black
       accent: indigo
 
-
-
-
 plugins:
   - search
+  - meta
+  - blog
+  - social:
+      cards_layout: default/variant
+      cards_layout_options:
+        background_color: "#0b1220cc"
+        color: "#ffffff"
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -60,8 +63,6 @@ nav:
   - Resume: resume.md
   - Blog:
       - blog/index.md
-      - Posts:
-          - "2026-02-15-Why-the-Most-Frequent-SKU-Winner-Can-Be-the-Wrong-Portfolio-Model": blog/posts/2026-02-15-Why-the-Most-Frequent-SKU-Winner-Can-Be-the-Wrong-Portfolio-Model.md
   - Contact: contact.md
 
 extra_css:
