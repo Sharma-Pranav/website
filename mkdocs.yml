@@ -29,8 +29,8 @@ plugins:
   - social:
       cards_layout: default/variant
       cards_layout_options:
-        background_color: "#0b1220cc"
-        color: "#ffffff"
+        background_color: "#0B0F14"
+        color: "#F8FAFC"
 
 markdown_extensions:
   - pymdownx.highlight:
