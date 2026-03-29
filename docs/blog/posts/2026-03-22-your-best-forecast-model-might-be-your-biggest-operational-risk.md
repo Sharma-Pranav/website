@@ -11,9 +11,7 @@ tags:
   - inventory
   - model-selection
   - chronos2
-  - ses
 ---
-
 # Your best forecast model might be your biggest operational risk
 
 Forecasts are not made to win benchmarks. They are made for decision-making.
