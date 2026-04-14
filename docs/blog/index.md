@@ -4,6 +4,8 @@ Short notes on forecasting, pricing, and decision-making under uncertainty.
 
 ## Posts
 <!-- POSTS:START -->
+- **2026-05-05** — [Averages do not show where the model starts to fail](posts/2026-05-05-averages-do-not-show-where-the-model-starts-to-fail.md)
+- **2026-04-21** — [There is no best forecasting model without a demand regime lens](posts/2026-04-21-there-is-no-best-forecasting-model-without-a-demand-regime-lens.md)
 - **2026-04-07** — [Simple models remain operationally viable — until demand stops being smooth](posts/2026-04-07-simple-models-remain-operationally-viable-until-demand-stops-being-smooth.md)
 - **2026-03-22** — [Your best forecast model might be your biggest operational risk](posts/2026-03-22-your-best-forecast-model-might-be-your-biggest-operational-risk.md)
 - **2026-03-10** — [Simple Models Win Where It Matters: Example SES](posts/2026-03-10-simple-models-win-where-it-matters-example-ses.md)
