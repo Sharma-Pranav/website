@@ -14,11 +14,17 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      GITHUB_PAGES: true
+      NO_MKDOCS_2_WARNING: 1
+
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -30,16 +36,27 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: requirements-lock.txt
+
+      - name: Install system dependencies for imaging
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install "mkdocs-material[imaging]"
+          pip install -r requirements-lock.txt
 
-      - name: Build docs (strict)
-        env:
-          CI: "true"
-        run: mkdocs build --strict
+      - name: Debug versions
+        run: |
+          python --version
+          pip freeze
+          mkdocs --version
+
+      - name: Build docs strict
+        run: mkdocs build --strict --verbose
 
       - name: Verify social cards were generated
         run: |
@@ -60,6 +77,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

@@ -2,50 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pranav-sharma.com/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://pranav-sharma.com/contact/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://pranav-sharma.com/resume/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://pranav-sharma.com/work-with-me/</loc>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://pranav-sharma.com/blog/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://pranav-sharma.com/blog/2026/02/15/why-the-most-frequent-sku-winner-can-be-the-wrong-portfolio-model/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://pranav-sharma.com/blog/2026/03/10/simple-models-win-where-it-matters-example-ses/</loc>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://pranav-sharma.com/blog/2026/03/22/your-best-forecast-model-might-be-your-biggest-operational-risk/</loc>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://pranav-sharma.com/blog/2026/04/07/simple-models-remain-operationally-viable--until-demand-stops-being-smooth/</loc>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://pranav-sharma.com/blog/2026/04/21/there-is-no-best-forecasting-model-without-a-demand-regime-lens/</loc>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://pranav-sharma.com/blog/2026/05/05/averages-do-not-show-where-the-model-starts-to-fail/</loc>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://pranav-sharma.com/labs/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://pranav-sharma.com/labs/decision-kernel-lite/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://pranav-sharma.com/labs/forecasting-sandbox/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://pranav-sharma.com/labs/pricing-decision-lite/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://pranav-sharma.com/blog/archive/2026/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://pranav-sharma.com/blog/category/notes/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://pranav-sharma.com/blog/category/forecasting/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://pranav-sharma.com/blog/category/operations/</loc>
+         <lastmod>2026-04-26</lastmod>
     </url>
 </urlset>

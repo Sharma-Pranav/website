@@ -6,31 +6,35 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-      
-      
-        <link rel="canonical" href="https://pranav-sharma.com/">
+        <meta name="description" content="I benchmarked 18 forecasting models. A 1970s algorithm nearly won.">
       
       
       
-        <link rel="next" href="work-with-me/">
+        <link rel="canonical" href="https://pranav-sharma.com/blog/2026/03/10/simple-models-win-where-it-matters-example-ses/">
+      
+      
+        <link rel="prev" href="../../../02/15/why-the-most-frequent-sku-winner-can-be-the-wrong-portfolio-model/">
+      
+      
+        <link rel="next" href="../../22/your-best-forecast-model-might-be-your-biggest-operational-risk/">
       
       
         
       
       
-      <link rel="icon" href="assets/logo.png">
+      <link rel="icon" href="../../../../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Pranav Sharma</title>
+        <title>Simple Models Win Where It Matters: Example SES - Pranav Sharma</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,15 +63,17 @@
     
   
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Pranav Sharma" />
-<meta property="og:image" content="https://pranav-sharma.com/assets/images/social/index.png" />
+<meta property="og:title" content="Simple Models Win Where It Matters: Example SES - Pranav Sharma" />
+<meta property="og:description" content="I benchmarked 18 forecasting models. A 1970s algorithm nearly won." />
+<meta property="og:image" content="https://pranav-sharma.com/assets/images/social/blog/2026/03/10/simple-models-win-where-it-matters-example-ses.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://pranav-sharma.com/" />
+<meta property="og:url" content="https://pranav-sharma.com/blog/2026/03/10/simple-models-win-where-it-matters-example-ses/" />
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Pranav Sharma" />
-<meta property="twitter:image" content="https://pranav-sharma.com/assets/images/social/index.png" />
+<meta property="twitter:title" content="Simple Models Win Where It Matters: Example SES - Pranav Sharma" />
+<meta property="twitter:description" content="I benchmarked 18 forecasting models. A 1970s algorithm nearly won." />
+<meta property="twitter:image" content="https://pranav-sharma.com/assets/images/social/blog/2026/03/10/simple-models-win-where-it-matters-example-ses.png" />
 </head>
   
   
@@ -87,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pranav-sharma" class="md-skip">
+        <a href="#simple-models-win-where-it-matters-example-ses" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +109,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Pranav Sharma" class="md-header__button md-logo" aria-label="Pranav Sharma" data-md-component="logo">
+    <a href="../../../../.." title="Pranav Sharma" class="md-header__button md-logo" aria-label="Pranav Sharma" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg>
@@ -123,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Simple Models Win Where It Matters: Example SES
             
           </span>
         </div>
@@ -204,7 +210,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -213,7 +221,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Pranav Sharma" class="md-nav__button md-logo" aria-label="Pranav Sharma" data-md-component="logo">
+    <a href="../../../../.." title="Pranav Sharma" class="md-nav__button md-logo" aria-label="Pranav Sharma" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg>
@@ -228,37 +236,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
         
   
   
@@ -274,109 +255,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#labs-live-demos-repos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Labs: Live Demos + Repos
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Labs: Live Demos + Repos">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#forecasting-sandbox-lite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Forecasting Sandbox Lite
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pricing-decision-lite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pricing Decision Lite
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decision-kernel-lite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Decision Kernel Lite
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#work-with-me" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Work With Me
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#about" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        About
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compliance-note" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Compliance Note
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -388,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="work-with-me/" class="md-nav__link">
+      <a href="../../../../../work-with-me/" class="md-nav__link">
         
   
   
@@ -462,7 +340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="labs/" class="md-nav__link">
+      <a href="../../../../../labs/" class="md-nav__link">
         
   
   
@@ -490,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="labs/forecasting-sandbox/" class="md-nav__link">
+      <a href="../../../../../labs/forecasting-sandbox/" class="md-nav__link">
         
   
   
@@ -518,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="labs/pricing-decision-lite/" class="md-nav__link">
+      <a href="../../../../../labs/pricing-decision-lite/" class="md-nav__link">
         
   
   
@@ -546,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="labs/decision-kernel-lite/" class="md-nav__link">
+      <a href="../../../../../labs/decision-kernel-lite/" class="md-nav__link">
         
   
   
@@ -581,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="resume/" class="md-nav__link">
+      <a href="../../../../../resume/" class="md-nav__link">
         
   
   
@@ -605,18 +483,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -637,7 +517,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -652,12 +532,14 @@
                 
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="blog/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   
@@ -734,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/archive/2026/" class="md-nav__link">
+      <a href="../../../../archive/2026/" class="md-nav__link">
         
   
   
@@ -819,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/category/forecasting/" class="md-nav__link">
+      <a href="../../../../category/forecasting/" class="md-nav__link">
         
   
   
@@ -849,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/category/notes/" class="md-nav__link">
+      <a href="../../../../category/notes/" class="md-nav__link">
         
   
   
@@ -879,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/category/operations/" class="md-nav__link">
+      <a href="../../../../category/operations/" class="md-nav__link">
         
   
   
@@ -922,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="contact/" class="md-nav__link">
+      <a href="../../../../../contact/" class="md-nav__link">
         
   
   
@@ -950,6 +832,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -969,44 +853,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#labs-live-demos-repos" class="md-nav__link">
+  <a href="#benchmark-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Labs: Live Demos + Repos
+        Benchmark setup
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Labs: Live Demos + Repos">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Result">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#forecasting-sandbox-lite" class="md-nav__link">
+  <a href="#plot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Forecasting Sandbox Lite
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pricing-decision-lite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pricing Decision Lite
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decision-kernel-lite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Decision Kernel Lite
+        Plot
       
     </span>
   </a>
@@ -1019,32 +892,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#work-with-me" class="md-nav__link">
+  <a href="#takeaway" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Work With Me
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#about" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        About
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compliance-note" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Compliance Note
+        Takeaway
       
     </span>
   </a>
@@ -1060,75 +911,125 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-
-<h1 id="pranav-sharma">Pranav Sharma</h1>
-<p>I help teams make forecasting, pricing, and ML outputs more trustworthy, explainable, and usable in real decisions.</p>
-<p>I build practical machine learning systems for decision support under uncertainty — across forecasting, pricing analytics, and risk-aware decisioning.</p>
-<p>Most teams do not need more AI first. They need clearer answers to questions like:</p>
-<ul>
-<li>Can we trust this forecast?</li>
-<li>Where does the model fail?</li>
-<li>Is the output biased?</li>
-<li>Is the advanced model actually better?</li>
-<li>Can business users explain and challenge the recommendation?</li>
-</ul>
-<p><a href="work-with-me/">Work With Me</a> · <a href="#labs-live-demos--repos">View Labs</a> · <a href="blog/">Read Blog</a> · <a href="resume/">Resume</a> · <a href="contact/">Contact</a></p>
-<hr />
-<h2 id="labs-live-demos-repos">Labs: Live Demos + Repos</h2>
-<p>These are independent portfolio systems built to demonstrate how forecasting, pricing, and decision logic can be made more transparent, testable, and useful.</p>
-<h3 id="forecasting-sandbox-lite">Forecasting Sandbox Lite</h3>
-<p>Benchmarking and model-selection workflows for time-series forecasting with transparent evaluation, bias-aware scoring, and reproducible comparisons.</p>
-<p><a href="labs/forecasting-sandbox/">Open Forecasting Sandbox</a></p>
-<h3 id="pricing-decision-lite">Pricing Decision Lite</h3>
-<p>Scenario-based pricing analytics under demand uncertainty with explicit, rule-based decision support.</p>
-<p><a href="labs/pricing-decision-lite/">Open Pricing Decision Lite</a></p>
-<h3 id="decision-kernel-lite">Decision Kernel Lite</h3>
-<p>Structured decision analysis using Expected Loss, Minimax Regret, and CVaR for comparing actions under uncertainty.</p>
-<p><a href="labs/decision-kernel-lite/">Open Decision Kernel Lite</a></p>
-<hr />
-<h2 id="work-with-me">Work With Me</h2>
-<p>I am a strong fit for teams that already have forecasting, pricing, or ML workflows, but need stronger evaluation, uncertainty handling, and decision logic.</p>
-<p>Typical areas:</p>
-<ul>
-<li>forecasting system audits</li>
-<li>model evaluation and benchmarking</li>
-<li>probabilistic forecasting</li>
-<li>pricing analytics</li>
-<li>decision intelligence prototypes</li>
-<li>MLOps / AI Operations reviews</li>
-</ul>
-<p><a href="work-with-me/">See how I can help</a></p>
-<hr />
-<h2 id="about">About</h2>
-<p>I am a Senior AI Engineer based in Heilbronn, Germany.</p>
-<p>My work focuses on operational ML systems for forecasting, pricing analytics, decision intelligence, and AI Operations. I care less about isolated model demos and more about whether the system can be evaluated, explained, deployed, and trusted in real workflows.</p>
-<p><a href="resume/">Resume</a> · <a href="blog/">Blog</a> · <a href="contact/">Contact</a></p>
-<hr />
-<h2 id="compliance-note">Compliance Note</h2>
-<p>This site contains independent portfolio content only. Views are my own and do not represent any employer. No proprietary or confidential employer data, code, methods, or client information is included. All public demos use public or synthetic data.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
             </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-03-10 00:00:00+00:00" class="md-ellipsis">March 10, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            in
+                            
+                              <a href="../../../../category/notes/">Notes</a>, 
+                              <a href="../../../../category/forecasting/">Forecasting</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
           
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="simple-models-win-where-it-matters-example-ses">Simple Models Win Where It Matters: Example SES</h1>
+<p>AI is advancing at incredible speed. It is tempting to assume that advanced models lead to better outcomes. This assumption often fails in demand forecasting. The best model in operations isn't the smartest one. It's the one that stays competitive while remaining stable, explainable, and governable at portfolio scale. The score difference between simple and complex can be minute. The operational difference is huge.</p>
+<p>Let us take the case of univariate models — they lack demand drivers (ML features) like price, location, promotions, weather, marketing pushes, etc. It is easy to assume that such models will not perform well. One would be pleasantly surprised by how good they actually perform without any bells and whistles.</p>
+<p>When transitioning from a manual forecasting process to AI-assisted planning, it is useful to leverage such models, as they work on just the past data for each SKU. Thereby, get the system running while one transitions to driver-driven ML models. And in practice, at the start, driver data is rarely ready: unclean, messy, or too unreliable to operationalize.</p>
+<p>In demand forecasting, modern portfolios have hundreds or thousands of SKUs, each behaving somewhat differently — which is exactly where univariate models remain competitive.</p>
+<h2 id="benchmark-setup">Benchmark setup</h2>
+<p>I benchmarked 18 univariate forecasting models on a 297-SKU subset from FreshRetailNet-50K (daily, intermittent demand, perishable context).</p>
+<p>Dataset: <a href="https://huggingface.co/datasets/Dingdong-Inc/FreshRetailNet-50K/tree/main">https://huggingface.co/datasets/Dingdong-Inc/FreshRetailNet-50K/tree/main</a></p>
+<p>The benchmark included:</p>
+<ul>
+<li><strong>Classical methods:</strong> SES, Holt, Holt-Winters, Theta, Croston variants, Naïve  </li>
+<li><strong>ML model (univariate formulation):</strong> LightGBM  </li>
+<li><strong>Foundation model:</strong> Chronos2  </li>
+</ul>
+<h2 id="result">Result</h2>
+<p>In the top plot, one can clearly see one such model — <strong>Simple Exponential Smoothing Optimized (SES)</strong> with a score of <strong>64.28</strong> — sitting very close to the top-performing model <strong>Chronos2 (64.25)</strong>. Lower score is considered better. SES (Optimized) is effectively tied with the best portfolio model, Chronos2. Here, the score difference is minute, but the operational difference is huge.</p>
+<h3 id="plot">Plot</h3>
+<p><img alt="Portfolio score by model — Executive view (SES highlighted)" src="../../../../../assets/images/ses_overall_executive_16x9.png" /></p>
+<p>A model that is slightly worse on paper but stable and governable can outperform a fragile system in real operations. Simple classical models like SES may not beat every other model, but they remain close to the top while being extremely easy to operate.</p>
+<h2 id="takeaway">Takeaway</h2>
+<p>In this case, SES is not a solution for everything but a high-quality operational baseline. When chosen, it provides portfolio-wide stability, minimal governance overhead, and predictable behavior under noise.</p>
+<p>PS: A more technical plot is shown below.</p>
+<p><img alt="Portfolio score by model — Technical view (SES highlighted)" src="../../../../../assets/images/ses_overall_technical_16x9.png" /></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1139,17 +1040,35 @@
   
     
       
+        
+      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../../02/15/why-the-most-frequent-sku-winner-can-be-the-wrong-portfolio-model/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Why the Most Frequent SKU Winner Can Be the Wrong Portfolio Model">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Why the Most Frequent SKU Winner Can Be the Wrong Portfolio Model
+              </div>
+            </div>
+          </a>
         
         
           
-          <a href="work-with-me/" class="md-footer__link md-footer__link--next" aria-label="Next: Work With Me">
+          <a href="../../22/your-best-forecast-model-might-be-your-biggest-operational-risk/" class="md-footer__link md-footer__link--next" aria-label="Next: Your best forecast model might be your biggest operational risk">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Work With Me
+                Your best forecast model might be your biggest operational risk
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1207,10 +1126,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.footer"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.footer"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
