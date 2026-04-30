@@ -1,5 +1,7 @@
 # Pranav Sharma
 
+![Pranav Sharma, Senior AI Engineer](assets/Portrait.jpg){ align=right width="180" }
+
 I help teams make forecasting, pricing, and ML outputs more trustworthy, explainable, and usable in real decisions.
 
 I build practical machine learning systems for decision support under uncertainty — across forecasting, pricing analytics, and risk-aware decisioning.

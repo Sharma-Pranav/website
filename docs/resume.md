@@ -2,6 +2,8 @@
 
 # Pranav Sharma
 
+![Pranav Sharma, Senior AI Engineer](assets/Portrait.jpg){ align=right width="160" }
+
 **Senior AI Engineer | Forecasting, Pricing Analytics, and Decision Intelligence**  
 Heilbronn, Germany  
 Email: [pranavsharma619@gmail.com](mailto:pranavsharma619@gmail.com) · LinkedIn: [linkedin.com/in/topranav](https://linkedin.com/in/topranav)
