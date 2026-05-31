@@ -4,6 +4,7 @@ Short notes on forecasting, pricing, and decision-making under uncertainty.
 
 ## Posts
 <!-- POSTS:START -->
+- **2026-06-02** — [Which Forecast Metric Matters for Which Business Decision](posts/2026-06-02-which-forecast-metric-matters-for-which-business-decision.md)
 - **2026-05-19** — [Why model quality alone does not create a trustworthy forecasting system](posts/2026-05-19-why-model-quality-alone-does-not-create-a-trustworthy-forecasting-system.md)
 - **2026-05-05** — [Averages do not show where the model starts to fail](posts/2026-05-05-averages-do-not-show-where-the-model-starts-to-fail.md)
 - **2026-04-21** — [There is no best forecasting model without a demand regime lens](posts/2026-04-21-there-is-no-best-forecasting-model-without-a-demand-regime-lens.md)
