@@ -8,11 +8,11 @@
 Heilbronn, Germany  
 Email: [pranavsharma619@gmail.com](mailto:pranavsharma619@gmail.com) · LinkedIn: [linkedin.com/in/topranav](https://linkedin.com/in/topranav)
 
-I help teams make forecasting, pricing, and ML outputs more trustworthy, explainable, and usable in real decisions.
+I develop deployable AI systems for forecasting, pricing optimization, and industrial decision-making.
 
-My work sits mainly across demand forecasting, pricing analytics, probabilistic ML, decision support, and AI Operations. I focus on systems that can be evaluated, explained, deployed, and trusted in real operational workflows.
+My work spans enterprise forecasting algorithms, global sales-pricing optimization, probabilistic ML, constrained decision systems, embedded industrial AI, and AI Operations. I focus on solutions that can be evaluated rigorously, integrated with business rules, deployed reliably, and used in operational decisions.
 
-Selected outcomes include forecasting workflow automation with approximately 100 person-hours/month reduction potential during scaled rollout, pricing analysis automation of approximately 40 hours/month, quantile and conformal uncertainty validation, Kubernetes-aligned deployment support, and lecturing AI Operations / AIOps at Hochschule Heilbronn.
+Selected outcomes include pricing algorithms for approximately 4,000 discount factors across 20 sales organizations, support for approximately 80 hours/month of manual-effort reduction, forecasting models that outperformed existing manual forecasts during validation, contribution to an AI-supported workflow affecting approximately 172 person-days/month of manual effort, and embedded C deployment of fan-grid optimization logic.
 
 [Forecasting Sandbox](labs/forecasting-sandbox.md) · [Pricing Decision Lite](labs/pricing-decision-lite.md) · [Decision Kernel Lite](labs/decision-kernel-lite.md) · [Blog](blog/index.md) · [Contact](contact.md)
 
