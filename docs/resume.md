@@ -47,26 +47,37 @@ The common thread in my work is simple:
 
 **03/2024 – Present**
 
-#### Demand Forecasting: Baselines → ML → Probabilistic Forecasting
+#### Sales Pricing and Discount-Factor Optimization
 
-- Built end-to-end demand forecasting workflows for replenishment and safety-stock planning using statistical baselines, ML models, and probabilistic outputs.
-- Standardized model evaluation across methods and horizons using rolling backtesting, MAE, bias, and composite scoring.
-- Developed baseline control layers to compare simple statistical models against ML and foundation-model approaches.
-- Implemented quantile forecasting workflows and calibration checks for uncertainty-aware planning.
-- Evaluated conformal prediction intervals using coverage and interval-width tradeoffs.
-- Benchmarked classical forecasting methods, ML models, and time-series foundation models through structured comparison.
-- Created explainable model-selection logic to support operational trust and stakeholder adoption.
-- Estimated forecasting workflow automation potential of approximately 100 person-hours/month during scaled rollout.
+- Led the development and validation of pricing algorithms within a global sales-pricing initiative.
+- Built ML models to optimize approximately 4,000 discount factors using sales behaviour, actual prices, reference prices, and commercial constraints.
+- Automated monthly optimization across 20 sales organizations, replacing a manual process that was difficult to review consistently at scale.
+- Built reproducible Kubernetes deployment workflows and supported integration with an operational monitoring dashboard.
+- Contributed to standardized pricing logic across sales organizations, supporting approximately 80 hours/month of manual-effort reduction.
 
-#### B2B Pricing Recommendation and Optimization
+#### Enterprise Forecasting Algorithms
 
-- Delivered ML-based pricing recommendation workflows for negotiation start prices.
-- Automated pricing analysis workflows, reducing manual effort by approximately 40 hours/month.
-- Built demand-response models and optimization logic under explicit business guardrails.
-- Validated pricing logic through offline backtesting against baseline policy.
-- Enabled what-if sensitivity analysis for commercial decision support.
-- Supported interpretable driver analysis to improve stakeholder trust in recommendations.
-- Supported Kubernetes-aligned deployment and reproducible ML artifact workflows.
+- Led the development and validation of forecasting algorithms within a cross-functional initiative spanning Finance, CRM, and Supply Chain Management.
+- Benchmarked statistical, machine-learning, probabilistic, and time-series foundation models using rolling backtesting, demand segmentation, accuracy, bias, and tail-risk analysis.
+- Implemented quantile forecasting, conformal prediction, uncertainty quantification, and human-in-the-loop enrichment.
+- Built reproducible training and evaluation pipelines; developed models that outperformed existing manual forecasts during validation.
+- Contributed to consolidating three manual forecasts into one AI-supported workflow and central dashboard, supporting the transition of approximately 172 person-days/month of manual effort.
+- Current development extends the forecasting layer toward feature-based models that integrate commercial and operational business knowledge.
+
+#### Fan-Grid Efficiency Optimization
+
+- Led the development of an AI-driven optimization solution for scalable fan-grid systems across airflow and pressure operating requirements.
+- Designed optimization logic for homogeneous and heterogeneous fan configurations.
+- Translated analytical optimization behaviour into a deployable machine-learning model.
+- Converted the optimization logic into a lightweight C implementation suitable for embedded ECU environments.
+- Defined the problem formulation, operating constraints, validation approach, and deployment architecture.
+
+#### Business-Constrained Discount Optimization
+
+- Developed a separate constrained-optimization workflow combining data-driven recommendations with explicit business rules.
+- Enabled selected discount factors to remain fixed while optimizing only eligible variables within business-defined ranges.
+- Integrated configurable commercial values and constraints directly into the optimization logic.
+- Preserved expert control by allowing business users to adjust selected parameters and manually refine recommendations.
 
 ---
 
