@@ -70,7 +70,7 @@ I am also open to selected conversations around:
 
 ## Contact
 
-**Email:** [pranav.systems@proton.me](mailto:pranav.systems@proton.me)  
+**Email:** [pranavsharma619@gmail.com](mailto:pranavsharma619@gmail.com)  
 **LinkedIn:** [linkedin.com/in/topranav](https://linkedin.com/in/topranav)
 
 ---
